@@ -1,7 +1,7 @@
 //// <reference types= "Cypress"/>
 
 describe("Test Contact Us form via WebdriverUni", () => {
-  it.only("Should be able to submit a successful submission via constact us form", () => {
+  it("Should be able to submit a successful submission via constact us form", () => {
     cy.visit("http://www.webdriveruniversity.com/Contact-Us/contactus.html");
     //cy.get('#contact-us').click()
     //cy.document().should('have.property', 'charset').and('eq', 'UTF-8')
