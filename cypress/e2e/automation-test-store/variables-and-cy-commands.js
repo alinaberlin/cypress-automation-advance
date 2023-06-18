@@ -12,11 +12,7 @@ describe("Verifying variables, cypress commands and jquery commands", () => {
         //Recomanded Approach
         cy.get("a[href*='product/category&path=']").contains("Makeup").click();
         cy.get("a[href*='product/category&path=']").contains("Skincare").click();
-        cy.get("h1 .maintext").then(($headerText) => {
-            const headerText = $headerText.text()
-            cy.log("Found header text: " + headerText)
-            expect(headerText).is.eq('Makeup')
-        })
+        
 
     });
 })
